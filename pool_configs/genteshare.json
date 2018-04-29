@@ -1,0 +1,64 @@
+{
+    "enabled": true,
+    "coin": "gts.json",
+
+    "address": "u pool wallet address",
+
+    "rewardRecipients": {
+        // "fee_address ": 3
+    },
+
+    "paymentProcessing": {
+        "enabled": false,
+        "paymentInterval": 20,
+        "minimumPayment": 10,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 9998,
+            "user": "username",
+            "password": "password"
+        }
+    },
+
+    "ports": {
+        "6666": {
+            "diff": 0.0003,
+             "varDiff": {
+                 "minDiff": 0.0003, //Minimum difficulty
+                 "maxDiff": 0.0004, //Network difficulty will be used if it is lower than this
+                 "targetTime": 5, //Try to get 1 share per this many seconds
+                 "retargetTime": 150, //Check to see if we should retarget every this many seconds
+                 "variancePercent": 30 //Allow time to very this % from target without retargeting
+             }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9998,
+            "user": "root",
+            "password": "rootroot"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 8822,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "",
+        "port": 3306,
+        "user": "",
+        "password": "",
+        "database": "",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
+

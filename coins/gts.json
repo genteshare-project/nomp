@@ -1,0 +1,6 @@
+{
+    "name": "Genteshare",
+    "symbol": "GTS",
+    "algorithm": "gts",
+    "mposDiffMultiplier": 256
+}
